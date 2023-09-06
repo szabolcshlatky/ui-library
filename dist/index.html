@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-HU" dir="ltr" id="index">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <meta name="description" content="150-160 karakter, (fókusz)kulcsszavakkal az elején" />
+  <meta name="keywords" content="fókusz,kevésbéfontos,max10" />
+  <meta name="author" content="Hlatky Szabolcs" />
+  <meta name="creator" content="Coding Sable" />
+  <meta name="publisher" content="Ictys" />
+  <meta name="generator" content="Visual Studio Code" />
+  <meta name="distribution" content="global" />
+  <meta name="revised" content="Ictys, 2023/01/01" />
+
+  <title>UI Library</title>
+
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/favicon.ico">
+
+  <script src="assets/bundle.js" defer></script>
+</head>
+<body>
+
+  <figure class="logo">
+    <a href="index.html" title="To the index page.">
+      <img src="images/logo.svg" alt="logo" width="64px" height="64px" />
+    </a>
+    <figcaption>
+      <button type="button" title="Skip to the main content." onclick="location.href='#main';">About</button>
+    </figcaption>
+  </figure>
+
+  <div class="container" id="main">
+    <!-- tooltip -->
+    <p>Lorem dolor sit amet consectetur adipisicing elit. Voluptate sequi odit totam. Quod maiores saepe sequi. <span class="tooltip" data-message="I'm a tooltip!!">Illum aspernatur</span> aut voluptatum, sequi quibusdam laudantium? Laborum asperiores consequuntur eum corporis exercitationem debitis.</p>
+    <h2>Services</h2>
+    <!-- dropdowns -->
+    <div class="dropdown">
+      <div class="trigger">Awesome T-shirt Designs</div>
+      <div class="content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis possimus, a natus totam sequi velit? Vel cupiditate hic incidunt quam laboriosam tenetur nam, voluptate, necessitatibus ex porro, soluta accusantium aspernatur.</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="trigger">Cool Sticker Printing</div>
+      <div class="content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis possimus, a natus totam sequi velit? Vel cupiditate hic incidunt quam laboriosam tenetur nam, voluptate, necessitatibus ex porro, soluta accusantium aspernatur.</p>
+      </div>
+    </div>
+    <h2>More information</h2>
+    <!-- tabs -->
+    <div class="tabs">
+      <ul>
+        <li class="trigger active" data-target="#about">About</li>
+        <li class="trigger" data-target="#delivery">Delivery info</li>
+        <li class="trigger" data-target="#returns">Returns info</li>
+      </ul>
+      <div id="about" class="content active">
+        <h3>about</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima suscipit assumenda mollitia nostrum atque facilis neque, non blanditiis deleniti, ab numquam similique eligendi soluta necessitatibus, ex quibusdam illum eaque voluptate.</p>
+      </div>
+      <div id="delivery" class="content">
+        <h3>delivery</h3>
+        <p>Non blanditiis deleniti, ab numquam similique eligendi soluta necessitatibus, ex quibusdam illum eaque voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima suscipit assumenda mollitia nostrum atque facilis neque.</p>
+      </div>
+      <div id="returns" class="content">
+        <h3>returns</h3>
+        <p>Adipisicing elit. Minima suscipit assumenda mollitia nostrum atque facilis neque, non blanditiis deleniti, lorem ipsum dolor sit amet consectetur ab numquam similique eligendi soluta necessitatibus, ex quibusdam illum eaque voluptate.</p>
+      </div>
+    </div>
+    <div>
+      <button class="snackbar-trigger">click me</button>
+    </div>
+  </div>
+
+  <footer>
+    <address class="©貂">
+      <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
+        <picture>
+          <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+          <img src="assets/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
+        </picture>
+      </button>
+    </address>
+  </footer>
+
+  <noscript>The web-browser does NOT support JavaScript or it is switched off!</noscript>
+
+</body>
+</html>
